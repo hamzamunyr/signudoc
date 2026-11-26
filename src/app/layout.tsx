@@ -13,9 +13,10 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SignuDoc",
-  description:
-    "Free e-signature software for small businesses. Upload, send, sign — no enterprise circus required.",
+  title: "The Pixel Serve",
+  description: "Document signing for The Pixel Serve.",
+  // Private install: keep every page out of search engines.
+  robots: { index: false, follow: false },
   icons: {
     icon: "/icon.svg",
   },

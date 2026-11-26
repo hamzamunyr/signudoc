@@ -136,6 +136,8 @@ function applySecurityHeaders(
   response.headers.set("Permissions-Policy", DEFAULT_PERMISSIONS_POLICY);
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   response.headers.set("X-Content-Type-Options", "nosniff");
+  // Private install: keep every page out of search engines.
+  response.headers.set("X-Robots-Tag", "noindex, nofollow");
 
   if (frameAncestors === "'none'") {
     response.headers.set("X-Frame-Options", "DENY");
